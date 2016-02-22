@@ -279,6 +279,7 @@ public class LiensTest {
 //    @Test
     public void moyenneAnnee() {
 
+        
         EntityManager em = Persistence.createEntityManagerFactory("StreamingPU").createEntityManager();
         System.out.println(em.createQuery("SELECT AVG(f.annee) FROM Film f").getSingleResult());
 

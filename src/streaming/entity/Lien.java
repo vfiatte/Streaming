@@ -14,7 +14,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
 /**
- *
+ * Entité gérant les films
  * @author admin
  */
 @Entity
