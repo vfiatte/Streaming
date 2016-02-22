@@ -272,7 +272,7 @@ public class LiensTest {
     public void filmplusAncienPeter() {
 
         EntityManager em = Persistence.createEntityManagerFactory("StreamingPU").createEntityManager();
-        System.out.println(em.createQuery("SELECT f.titre FROM Film f WHERE f.annee IN (SELECT MIN(f.annee) FROM Film f JOIN f.realisateur r WHERE r.nom = 'Jackson')").getParameter(name, type));
+        System.out.println(em.createQuery("SELECT f.titre FROM Film f WHERE f.annee IN (SELECT MIN(f.annee) FROM Film f JOIN f.realisateur r WHERE r.nom = 'Jackson'").getResultList());
 
     }
     
